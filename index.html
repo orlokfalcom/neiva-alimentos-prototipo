@@ -3,81 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos - Neiva alimentos</title>
+  <title>Login - Neiva alimentos</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
-<body class="page products-page">
-  <header class="site-header" data-animate>
-    <div class="header-inner">
-      <a href="home.html" class="brand">
-        <span class="brand-pill">Neiva alimentos</span>
-        <span class="brand-sub">condimentos artesanais</span>
-      </a>
-      <nav class="nav">
-        <a class="nav-link" href="home.html">Home</a>
-        <a class="nav-link" href="produtos.html">Produtos</a>
-        <a class="nav-link nav-link-cart" href="carrinho.html">
-          Carrinho <span class="nav-count" data-cart-count>0</span>
-        </a>
-      </nav>
-      <div class="nav-actions">
-        <a class="btn btn-ghost" href="cadastro.html">Criar conta</a>
-        <a class="btn btn-primary" href="checkout.html">Finalizar compra</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="page-content">
-    <section class="section" data-animate>
-      <header class="section-header">
-        <h1>Produtos Disponíveis</h1>
-        <p>Explore nosso portfólio completo de condimentos selecionados.</p>
-      </header>
-      <div class="product-toolbar">
-        <div>
-          <label for="filtro">Filtro rápido</label>
-          <select id="filtro" class="select" disabled>
-            <option>Todos os perfis</option>
-          </select>
-        </div>
-        <div>
-          <p class="toolbar-hint">Experimente criar misturas personalizadas com nosso time especialista.</p>
-        </div>
-      </div>
-      <div class="product-grid" id="produtos"></div>
-    </section>
-
-    <section class="section" data-animate>
-      <div class="section-split">
-        <article class="split-card glass-card">
-          <h3>Receba orientações exclusivas</h3>
-          <p>Agende uma consultoria de uso para construir fichas técnicas com harmonizações surpreendentes.</p>
-          <a class="btn btn-primary" href="checkout.html">Conhecer planos</a>
-        </article>
-        <article class="split-card glass-card">
-          <h3>Garantia de frescor</h3>
-          <p>Monitoramos temperatura e umidade dos lotes para manter a intensidade aromática até a sua mesa.</p>
-          <a class="btn btn-ghost" href="carrinho.html">Ver carrinho</a>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" data-animate>
-    <div>
+<body class="page auth-page">
+  <div class="auth-wrapper">
+    <section class="auth-panel" data-animate>
       <span class="brand-pill">Neiva alimentos</span>
-      <p>Temperos, blends e histórias que celebram o melhor da cozinha brasileira.</p>
-    </div>
-    <div>
-      <p class="footer-heading">Contato</p>
-      <p>contato@neivaalimentos.com</p>
-      <p>Seg a Sex • 9h às 18h</p>
-    </div>
-    <div>
-      <p class="footer-heading">Visite</p>
-      <p>Rua das Sementes, 412 • São Paulo - SP</p>
-    </div>
-  </footer>
+      <h1>Sabores artesanais direto da sua cozinha</h1>
+      <p class="auth-panel-text">
+        Entre para descobrir combinações exclusivas e renovar o seu cardápio com condimentos frescos e selecionados.
+      </p>
+      <ul class="auth-highlights">
+        <li>Produtos naturais certificados e rastreáveis</li>
+        <li>Entrega cuidadosa para todo o Brasil</li>
+        <li>Programa de fidelidade com recompensas</li>
+      </ul>
+    </section>
+
+    <section class="auth-card" data-animate>
+      <div class="auth-card-header">
+        <h2>Entrar</h2>
+        <p>Use seu e-mail e senha para acessar o catálogo completo.</p>
+      </div>
+      <form class="form" action="home.html">
+        <label class="form-label" for="login-email">E-mail</label>
+        <input id="login-email" type="email" placeholder="Digite seu e-mail" required>
+        <label class="form-label" for="login-password">Senha</label>
+        <input id="login-password" type="password" placeholder="Digite sua senha" required>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <p class="auth-footer">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </section>
+  </div>
+  <script src="script.js" defer></script>
 </body>
 </html>

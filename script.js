@@ -3,31 +3,31 @@ const produtos = [
     id: 1,
     nome: "Sal Marinho Flor de Sal 150g",
     preco: 24.9,
-    imagem: "https://images.unsplash.com/photo-1615486364395-0e84a9288c01?auto=format&fit=crop&w=800&q=80"
+    imagem: "https://s2-g1.glbimg.com/5t9mwZFW_82Qdkh30LaJhAcEAoo=/0x84:950x600/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2015/11/26/sal-31.jpg"
   },
   {
     id: 2,
     nome: "Azeite de Oliva Extra Virgem 500ml",
     preco: 62.9,
-    imagem: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHcf47VxilQ9Yp_NgrVo0-E1lSm8rzRUMXA&s"
   },
   {
     id: 3,
     nome: "Vinagre Balsâmico Tradizionale 250ml",
     preco: 48.5,
-    imagem: "https://images.unsplash.com/photo-1604908177067-a67df2df50fc?auto=format&fit=crop&w=800&q=80"
+    imagem: "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1933/live/d07d37b0-7410-11ee-b315-7d1db3f558c6.jpg.webp"
   },
   {
     id: 4,
     nome: "Pimenta-do-Reino Moída na Hora 100g",
     preco: 18.9,
-    imagem: "https://images.unsplash.com/photo-1475856034134-5c529926f8b2?auto=format&fit=crop&w=800&q=80"
+    imagem: "https://acdn-us.mitiendanube.com/stores/002/032/932/products/pimenta-do-reino-3-a146122b14db1d24ae17101889757420-1024-1024.jpg"
   },
   {
     id: 5,
     nome: "Orégano Desidratado Premium 60g",
     preco: 14.7,
-    imagem: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80&crop=entropy"
+    imagem: "https://http2.mlstatic.com/D_NQ_NP_783884-MLU74420217256_022024-O.webp"
   }
 ];
 

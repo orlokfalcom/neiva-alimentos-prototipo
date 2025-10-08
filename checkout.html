@@ -63,13 +63,92 @@
           </div>
           <div class="payment-methods" aria-label="Formas de pagamento aceitas">
             <p class="payment-title">Formas de pagamento</p>
-            <ul class="payment-icons">
-              <li><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=200&q=80" alt="Cartões Visa e Mastercard"></li>
-              <li><img src="https://images.unsplash.com/photo-1600180758890-6d69cce4431c?auto=format&fit=crop&w=200&q=80" alt="Cartões Elo e Amex"></li>
-              <li><img src="https://images.unsplash.com/photo-1606327053703-5a795efe1134?auto=format&fit=crop&w=200&q=80" alt="Pagamento com Pix"></li>
-              <li><img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=200&q=80" alt="Boleto bancário"></li>
-            </ul>
-            <p class="payment-note">Aceitamos pagamento recorrente e parcelamento em até 6x sem juros.</p>
+            <div class="payment-grid">
+              <article class="payment-card">
+                <header>
+                  <span class="payment-chip">Cartões de crédito</span>
+                  <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=240&q=80" alt="Cartões Visa e Mastercard">
+                </header>
+                <ul>
+                  <li>Visa, Mastercard, Elo e Amex</li>
+                  <li>Parcelamento em até 6x sem juros</li>
+                  <li>Processamento com tokenização segura</li>
+                </ul>
+              </article>
+
+              <article class="payment-card">
+                <header>
+                  <span class="payment-chip">Pix instantâneo</span>
+                  <img src="https://images.unsplash.com/photo-1606327053703-5a795efe1134?auto=format&fit=crop&w=240&q=80" alt="Pagamento com Pix">
+                </header>
+                <ul>
+                  <li>Confirmação em segundos</li>
+                  <li>QR Code válido por 30 minutos</li>
+                  <li>Cashback de 5% em compras recorrentes</li>
+                </ul>
+              </article>
+
+              <article class="payment-card">
+                <header>
+                  <span class="payment-chip">Boleto e transferência</span>
+                  <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=240&q=80" alt="Boleto bancário">
+                </header>
+                <ul>
+                  <li>Prazo de compensação em até 1 dia útil</li>
+                  <li>Ideal para compras corporativas</li>
+                  <li>Envio de comprovante automático</li>
+                </ul>
+              </article>
+            </div>
+            <div class="payment-note-wrapper">
+              <p class="payment-note">Aceitamos pagamento recorrente e parcelamento em até 6x sem juros.</p>
+              <div class="security-seal">
+                <span class="seal-icon">🔒</span>
+                <div>
+                  <strong>Checkout protegido</strong>
+                  <p>Certificação PCI DSS e criptografia de ponta a ponta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivery-block" aria-label="Opções de entrega disponíveis">
+            <p class="delivery-title">Opções de entrega</p>
+            <div class="delivery-grid">
+              <article class="delivery-card">
+                <header>
+                  <span class="delivery-badge">Hoje</span>
+                  <span class="delivery-chip">Retirada express</span>
+                </header>
+                <p>Retire ainda hoje em nossa cozinha de criação e ganhe um brinde exclusivo.</p>
+                <ul>
+                  <li>Disponível até às 18h</li>
+                  <li>Sem custo adicional</li>
+                </ul>
+              </article>
+              <article class="delivery-card">
+                <header>
+                  <span class="delivery-badge">24h</span>
+                  <span class="delivery-chip">Entrega urbana</span>
+                </header>
+                <p>Motoboy refrigerado para São Paulo e região metropolitana com monitoramento em tempo real.</p>
+                <ul>
+                  <li>Taxa fixa de R$ 18</li>
+                  <li>Mensagem automática no desembarque</li>
+                </ul>
+              </article>
+              <article class="delivery-card">
+                <header>
+                  <span class="delivery-badge">48h</span>
+                  <span class="delivery-chip">Logística nacional</span>
+                </header>
+                <p>Envio embalado a vácuo para todo o Brasil com seguro e rastreamento atualizado a cada etapa.</p>
+                <ul>
+                  <li>Frete calculado por CEP</li>
+                  <li>Seguro incluso até R$ 500</li>
+                </ul>
+              </article>
+            </div>
+            <p class="delivery-note">Escolha a modalidade após confirmar o endereço. Informaremos cada atualização por e-mail e WhatsApp.</p>
           </div>
           <div class="summary-total">
             <span>Total estimado</span>
