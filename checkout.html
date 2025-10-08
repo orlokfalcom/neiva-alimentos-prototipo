@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Neiva alimentos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page checkout-page">
+  <header class="site-header" data-animate>
+    <div class="header-inner">
+      <a href="home.html" class="brand">
+        <span class="brand-pill">Neiva alimentos</span>
+        <span class="brand-sub">condimentos artesanais</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="produtos.html">Produtos</a>
+        <a class="nav-link nav-link-cart" href="carrinho.html">
+          Carrinho <span class="nav-count" data-cart-count>0</span>
+        </a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="carrinho.html">Voltar ao carrinho</a>
+        <button class="btn btn-primary" type="button" onclick="alert('Compra finalizada com sucesso!')">Finalizar pedido</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="section" data-animate>
+      <header class="section-header">
+        <h1>Finalizar compra</h1>
+        <p>Confirme seus dados e escolha a melhor forma de pagamento.</p>
+      </header>
+      <div class="checkout-grid">
+        <form class="glass-card form">
+          <h2>Endereço de entrega</h2>
+          <label class="form-label" for="checkout-name">Nome completo</label>
+          <input id="checkout-name" type="text" placeholder="Informe seu nome" required>
+
+          <label class="form-label" for="checkout-address">Endereço</label>
+          <input id="checkout-address" type="text" placeholder="Rua Exemplo, 123" required>
+
+          <label class="form-label" for="checkout-city">Cidade</label>
+          <input id="checkout-city" type="text" placeholder="São Paulo" required>
+
+          <label class="form-label" for="checkout-cep">CEP</label>
+          <input id="checkout-cep" type="text" placeholder="00000-000" required>
+        </form>
+
+        <div class="glass-card checkout-summary">
+          <h2>Pagamento</h2>
+          <p class="checkout-note">Seus dados estão protegidos com criptografia reforçada.</p>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="checkout-subtotal">R$ 0,00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Frete</span>
+            <strong>Calculado no próximo passo</strong>
+          </div>
+          <div class="summary-total">
+            <span>Total estimado</span>
+            <strong id="checkout-total">R$ 0,00</strong>
+          </div>
+          <button class="btn btn-primary btn-full" type="button" onclick="alert('Compra finalizada com sucesso!')">Confirmar pedido</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-animate>
+      <div class="section-split">
+        <article class="split-card glass-card">
+          <h3>Entrega inteligente</h3>
+          <p>Monitoramos a rota para preservar o frescor e a integridade dos condimentos até a sua porta.</p>
+        </article>
+        <article class="split-card glass-card">
+          <h3>Atendimento humano</h3>
+          <p>Nossa equipe acompanha sua jornada com atualizações e suporte personalizado em cada etapa.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-animate>
+    <div>
+      <span class="brand-pill">Neiva alimentos</span>
+      <p>Temperos, blends e histórias que celebram o melhor da cozinha brasileira.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Contato</p>
+      <p>contato@neivaalimentos.com</p>
+      <p>Seg a Sex • 9h às 18h</p>
+    </div>
+    <div>
+      <p class="footer-heading">Visite</p>
+      <p>Rua das Sementes, 412 • São Paulo - SP</p>
+    </div>
+  </footer>
+</body>
+</html>

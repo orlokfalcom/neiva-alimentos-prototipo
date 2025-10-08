@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Neiva alimentos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page cart-page">
+  <header class="site-header" data-animate>
+    <div class="header-inner">
+      <a href="home.html" class="brand">
+        <span class="brand-pill">Neiva alimentos</span>
+        <span class="brand-sub">condimentos artesanais</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="produtos.html">Produtos</a>
+        <a class="nav-link nav-link-cart" href="carrinho.html">
+          Carrinho <span class="nav-count" data-cart-count>0</span>
+        </a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="checkout.html">Checkout</a>
+        <a class="btn btn-primary" href="produtos.html">Adicionar produtos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="section" data-animate>
+      <header class="section-header">
+        <h1>Seu carrinho</h1>
+        <p>Revise os itens antes de concluir a compra.</p>
+      </header>
+      <div class="cart-wrapper glass-card">
+        <div id="carrinho" class="cart-list"></div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Total estimado</span>
+            <strong id="cart-total">R$ 0,00</strong>
+          </div>
+          <p class="summary-note">Frete calculado no próximo passo.</p>
+          <a class="btn btn-primary btn-full" href="checkout.html">Avançar para checkout</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-animate>
+      <div class="section-split">
+        <article class="split-card glass-card">
+          <h3>Clube fidelidade</h3>
+          <p>Ganhe pontos para trocar por lançamentos sazonais e experiências com chefs convidados.</p>
+        </article>
+        <article class="split-card glass-card">
+          <h3>Suporte dedicado</h3>
+          <p>Indique o estilo de pratos que você prepara e receba sugestões personalizadas.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-animate>
+    <div>
+      <span class="brand-pill">Neiva alimentos</span>
+      <p>Temperos, blends e histórias que celebram o melhor da cozinha brasileira.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Contato</p>
+      <p>contato@neivaalimentos.com</p>
+      <p>Seg a Sex • 9h às 18h</p>
+    </div>
+    <div>
+      <p class="footer-heading">Visite</p>
+      <p>Rua das Sementes, 412 • São Paulo - SP</p>
+    </div>
+  </footer>
+</body>
+</html>

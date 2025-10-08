@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Neiva alimentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page auth-page">
+  <div class="auth-wrapper">
+    <section class="auth-panel" data-animate>
+      <span class="brand-pill">Neiva alimentos</span>
+      <h1>Crie sua conta e receba novidades sazonais</h1>
+      <p class="auth-panel-text">
+        Cadastre-se para acessar condições especiais, receber combos temáticos e participar do clube de fidelidade.
+      </p>
+      <ul class="auth-highlights">
+        <li>Ofertas antecipadas em lançamentos limitados</li>
+        <li>Consultoria especializada em harmonização</li>
+        <li>Brindes colecionáveis a cada temporada</li>
+      </ul>
+    </section>
+
+    <section class="auth-card" data-animate>
+      <div class="auth-card-header">
+        <h2>Criar conta</h2>
+        <p>Preencha os dados abaixo para começar a aproveitar os benefícios.</p>
+      </div>
+      <form class="form" action="home.html">
+        <label class="form-label" for="signup-name">Nome completo</label>
+        <input id="signup-name" type="text" placeholder="Informe seu nome" required>
+        <label class="form-label" for="signup-email">E-mail</label>
+        <input id="signup-email" type="email" placeholder="Digite seu e-mail" required>
+        <label class="form-label" for="signup-password">Senha</label>
+        <input id="signup-password" type="password" placeholder="Crie uma senha" required>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+      <p class="auth-footer">Já tem conta? <a href="index.html">Fazer login</a></p>
+    </section>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

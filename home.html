@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Neiva alimentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Neiva alimentos</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+  <main class="container">
+  <h2>Condimentos Disponíveis</h2>
+
+  <div class="carousel">
+    <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
+
+    <div class="carousel-items" id="carousel-items">
+      <!-- Produtos carregados dinamicamente -->
+    </div>
+
+    <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
+  </div>
+</main>
+
+<script src="script.js" defer></script>
+
+
+</body>
+</html>
