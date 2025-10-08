@@ -1,33 +1,33 @@
 const produtos = [
   {
     id: 1,
-    nome: "Sal Marinho 1kg",
-    preco: 5.9,
-    imagem: "https://cdn.pixabay.com/photo/2017/03/10/12/04/salt-2137330_1280.jpg"
+    nome: "Sal Marinho Flor de Sal 150g",
+    preco: 24.9,
+    imagem: "https://images.unsplash.com/photo-1615486364395-0e84a9288c01?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
     nome: "Azeite de Oliva Extra Virgem 500ml",
-    preco: 29.9,
-    imagem: "https://cdn.pixabay.com/photo/2017/05/23/22/36/olive-oil-2339110_1280.jpg"
+    preco: 62.9,
+    imagem: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
-    nome: "Vinagre Balsâmico 250ml",
-    preco: 12.5,
-    imagem: "https://cdn.pixabay.com/photo/2017/01/03/21/33/vinegar-1959534_1280.jpg"
+    nome: "Vinagre Balsâmico Tradizionale 250ml",
+    preco: 48.5,
+    imagem: "https://images.unsplash.com/photo-1604908177067-a67df2df50fc?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
-    nome: "Pimenta-do-Reino Moída 100g",
-    preco: 8.9,
-    imagem: "https://cdn.pixabay.com/photo/2016/08/29/09/53/pepper-1627543_1280.jpg"
+    nome: "Pimenta-do-Reino Moída na Hora 100g",
+    preco: 18.9,
+    imagem: "https://images.unsplash.com/photo-1475856034134-5c529926f8b2?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 5,
-    nome: "Orégano Desidratado 50g",
-    preco: 6.2,
-    imagem: "https://cdn.pixabay.com/photo/2016/06/17/13/33/oregano-1460292_1280.jpg"
+    nome: "Orégano Desidratado Premium 60g",
+    preco: 14.7,
+    imagem: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80&crop=entropy"
   }
 ];
 

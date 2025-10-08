@@ -1,17 +1,18 @@
 @import url('./assets/fonts/8df7451d6c0a4b4981b47ded666596a8.css');
 
 :root {
-  --bg: #f6f4f1;
-  --bg-alt: #ebe6e1;
-  --surface: rgba(255, 255, 255, 0.85);
-  --surface-strong: rgba(255, 255, 255, 0.95);
-  --accent: #2f5c45;
-  --accent-strong: #244636;
-  --accent-soft: #8fa58e;
-  --text: #273029;
-  --text-muted: #5d665a;
-  --border: rgba(39, 48, 41, 0.08);
-  --shadow: 0 20px 45px rgba(27, 36, 30, 0.12);
+  --bg: #f5f3ef;
+  --bg-alt: #ece7e0;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --accent: #335a4d;
+  --accent-strong: #1f4035;
+  --accent-soft: #9cb7a9;
+  --highlight: #e0b973;
+  --text: #252f2a;
+  --text-muted: #5d6b63;
+  --border: rgba(37, 47, 42, 0.08);
+  --shadow: 0 24px 48px rgba(31, 46, 39, 0.14);
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 12px;
@@ -26,8 +27,8 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top right, #f9f7f4, var(--bg)),
-    linear-gradient(120deg, rgba(236, 229, 221, 0.6), rgba(224, 230, 223, 0.3));
+  background: radial-gradient(circle at top right, #f8f5f1, var(--bg)),
+    linear-gradient(125deg, rgba(197, 209, 202, 0.28), rgba(224, 218, 207, 0.4));
   min-height: 100vh;
 }
 
@@ -83,6 +84,7 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-size: 0.78rem;
+  box-shadow: 0 12px 24px rgba(31, 64, 53, 0.22);
 }
 
 .brand-sub {
@@ -119,7 +121,7 @@ body {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s var(--transition);
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--highlight));
 }
 
 .nav-link:hover,
@@ -171,27 +173,27 @@ body {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #fff;
-  box-shadow: 0 14px 28px rgba(36, 70, 54, 0.22);
+  box-shadow: 0 18px 36px rgba(31, 64, 53, 0.28);
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 34px rgba(36, 70, 54, 0.28);
+  transform: translateY(-3px);
+  box-shadow: 0 24px 46px rgba(31, 64, 53, 0.34);
 }
 
 .btn-ghost {
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(36, 70, 54, 0.18);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 64, 53, 0.22);
   color: var(--accent-strong);
 }
 
 .btn-ghost:hover,
 .btn-ghost:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 34px rgba(36, 70, 54, 0.16);
+  transform: translateY(-3px);
+  box-shadow: 0 22px 42px rgba(31, 64, 53, 0.18);
 }
 
 .btn-full {
@@ -204,9 +206,11 @@ body {
   gap: 8px;
   padding: 8px 16px;
   border-radius: 999px;
-  background: rgba(36, 70, 54, 0.08);
+  background: rgba(156, 183, 169, 0.28);
+  color: var(--accent-strong);
   font-size: 0.85rem;
   font-weight: 500;
+  box-shadow: 0 10px 22px rgba(156, 183, 169, 0.32);
 }
 
 .hero {
@@ -265,6 +269,7 @@ body {
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: var(--shadow);
+  border: 1px solid rgba(31, 64, 53, 0.08);
   transform: translateY(0);
   transition: transform 0.35s var(--transition), box-shadow 0.35s var(--transition);
 }
@@ -284,15 +289,15 @@ body {
   align-items: center;
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(36, 70, 54, 0.12);
+  background: rgba(156, 183, 169, 0.24);
   color: var(--accent-strong);
   font-weight: 600;
   font-size: 0.8rem;
 }
 
 .badge-alt {
-  background: rgba(143, 165, 142, 0.2);
-  color: var(--accent);
+  background: rgba(224, 185, 115, 0.18);
+  color: var(--accent-strong);
 }
 
 .section {
@@ -324,9 +329,9 @@ body {
   margin-top: 32px;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.32);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(36, 70, 54, 0.06);
+  border: 1px solid rgba(31, 64, 53, 0.08);
 }
 
 .carousel-track {
@@ -342,6 +347,7 @@ body {
   border-radius: var(--radius-md);
   background: var(--surface-strong);
   box-shadow: var(--shadow);
+  border: 1px solid rgba(31, 64, 53, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -367,7 +373,7 @@ body {
 
 .carousel-item p {
   margin: 0 20px;
-  color: var(--accent-strong);
+  color: var(--highlight);
   font-weight: 600;
   font-size: 1rem;
 }
@@ -384,17 +390,18 @@ body {
   height: 44px;
   border-radius: 50%;
   border: none;
-  background: rgba(36, 70, 54, 0.15);
+  background: linear-gradient(135deg, rgba(51, 90, 77, 0.9), rgba(31, 64, 53, 0.9));
   color: #fff;
   font-size: 1.5rem;
+  box-shadow: 0 12px 28px rgba(31, 64, 53, 0.3);
   cursor: pointer;
   transition: background 0.3s var(--transition), transform 0.3s var(--transition);
 }
 
 .carousel-control:hover,
 .carousel-control:focus-visible {
-  background: rgba(36, 70, 54, 0.25);
-  transform: translateY(-50%) scale(1.06);
+  background: linear-gradient(135deg, rgba(51, 90, 77, 1), rgba(31, 64, 53, 1));
+  transform: translateY(-50%) scale(1.08);
 }
 
 .carousel-control.prev { left: 16px; }
@@ -412,7 +419,7 @@ body {
   border-radius: var(--radius-lg);
   padding: 28px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(36, 70, 54, 0.08);
+  border: 1px solid rgba(31, 64, 53, 0.1);
 }
 
 .interactive-card {
@@ -425,7 +432,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(143, 165, 142, 0.15), transparent 45%);
+  background: linear-gradient(135deg, rgba(51, 90, 77, 0.16), transparent 45%);
   opacity: 0;
   transition: opacity 0.35s var(--transition);
 }
@@ -469,7 +476,7 @@ body {
   height: 14px;
   border-radius: 50%;
   border: 2px solid var(--accent);
-  background: rgba(36, 70, 54, 0.12);
+  background: rgba(156, 183, 169, 0.4);
 }
 
 .site-footer {
@@ -544,7 +551,7 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--highlight));
 }
 
 .auth-card {
@@ -668,7 +675,7 @@ textarea:focus {
 .product-card .price {
   margin: 0 24px 24px;
   font-weight: 600;
-  color: var(--accent-strong);
+  color: var(--highlight);
 }
 
 .cart-wrapper {
@@ -689,7 +696,8 @@ textarea:focus {
   gap: 16px;
   padding: 18px 22px;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(31, 64, 53, 0.08);
 }
 
 .cart-item-info {
@@ -742,7 +750,47 @@ textarea:focus {
 
 .checkout-summary {
   display: grid;
-  gap: 16px;
+  gap: 20px;
+}
+
+.payment-methods {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 64, 53, 0.08);
+  box-shadow: 0 16px 32px rgba(31, 64, 53, 0.12);
+}
+
+.payment-title {
+  margin: 0 0 12px;
+  font-weight: 600;
+  color: var(--accent-strong);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.payment-icons {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.payment-icons img {
+  width: 100%;
+  height: 48px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 18px rgba(31, 64, 53, 0.16);
+}
+
+.payment-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .toolbar-hint {
@@ -785,11 +833,11 @@ textarea:focus {
   transform: translateX(-50%) translateY(20px);
   padding: 14px 28px;
   border-radius: 999px;
-  background: rgba(36, 70, 54, 0.92);
+  background: linear-gradient(135deg, rgba(51, 90, 77, 0.92), rgba(31, 64, 53, 0.92));
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.02em;
-  box-shadow: 0 18px 38px rgba(36, 70, 54, 0.24);
+  box-shadow: 0 18px 38px rgba(31, 64, 53, 0.26);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s var(--transition), transform 0.35s var(--transition);

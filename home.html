@@ -1,36 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Home - Neiva alimentos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Neiva alimentos</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Neiva alimentos</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="carrinho.html">Carrinho</a>
-    </nav>
-  </header>
-  <main class="container">
-  <h2>Condimentos Disponíveis</h2>
+<body class="page auth-page">
+  <div class="auth-wrapper">
+    <section class="auth-panel" data-animate>
+      <span class="brand-pill">Neiva alimentos</span>
+      <h1>Sabores artesanais direto da sua cozinha</h1>
+      <p class="auth-panel-text">
+        Entre para descobrir combinações exclusivas e renovar o seu cardápio com condimentos frescos e selecionados.
+      </p>
+      <ul class="auth-highlights">
+        <li>Produtos naturais certificados e rastreáveis</li>
+        <li>Entrega cuidadosa para todo o Brasil</li>
+        <li>Programa de fidelidade com recompensas</li>
+      </ul>
+    </section>
 
-  <div class="carousel">
-    <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
-
-    <div class="carousel-items" id="carousel-items">
-      <!-- Produtos carregados dinamicamente -->
-    </div>
-
-    <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
+    <section class="auth-card" data-animate>
+      <div class="auth-card-header">
+        <h2>Entrar</h2>
+        <p>Use seu e-mail e senha para acessar o catálogo completo.</p>
+      </div>
+      <form class="form" action="home.html">
+        <label class="form-label" for="login-email">E-mail</label>
+        <input id="login-email" type="email" placeholder="Digite seu e-mail" required>
+        <label class="form-label" for="login-password">Senha</label>
+        <input id="login-password" type="password" placeholder="Digite sua senha" required>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <p class="auth-footer">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </section>
   </div>
-</main>
-
-<script src="script.js" defer></script>
-
-
+  <script src="script.js" defer></script>
 </body>
 </html>
